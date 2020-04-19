@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
 	s1 += rec1;
 	s1 += rec2;
 	
-	s1 -> rec1;
+	s1 -= rec1; 
 	
 	return 0;
 
