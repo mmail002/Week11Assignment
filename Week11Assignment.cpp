@@ -66,25 +66,28 @@ public:
 class Segment  {
 
 protected:
-	Shape * fromShape;
-	Shape * toShape;
+	const Shape * fromShape;
+	const Shape * toShape;
 
+public:
+	Segment() : fromShape(nullptr), toShape( nullptr ) {
+	}
 };
 
 int main(int argc, char *argv[])
 {
-	Rectangle rec1(1, 2, 3, 4);
+	Rectangle  rec1(1, 2, 3, 4);
 
-	cout << rec1;
+	//cout << rec1;
 
 	Rectangle rec2(1, 2, 6, 8);
 
     Segment s1;
 	
-	s1 += rec1;
-	s1 += rec2;
+	s1 += &rec1;
+	s1 += &rec2;
 	
-	s1 -= rec1; 
+	s1 -= &rec1; 
 	
 	return 0;
 
