@@ -1,6 +1,6 @@
 // Week11Assignment.cpp : Defines the entry point for the console application.
 //
-// 
+// demo for the class
 
 
 #include <iostream>
